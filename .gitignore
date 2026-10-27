@@ -9,3 +9,6 @@ playwright/.cache/
 *.log
 .DS_Store
 Thumbs.db
+
+# Local backup test files
+tests/erp.spec-before-*.js
