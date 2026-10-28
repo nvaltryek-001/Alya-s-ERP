@@ -199,3 +199,145 @@
     width: 245px;
   }
 }
+
+/* Alya ERP S logo branding */
+.brand .brand-logo {
+    width: 36px;
+    height: 36px;
+    max-width: 36px;
+    object-fit: contain;
+    flex: 0 0 36px;
+}
+
+.sidebar-footer .partner-logo {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    flex: 0 0 36px;
+}
+
+/* Final reference-matched logo sizing */
+.brand .brand-logo {
+    width: 28px;
+    height: 34px;
+    max-width: 28px;
+    flex: 0 0 28px;
+    object-fit: contain;
+}
+
+.sidebar-footer .partner-logo {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    object-fit: contain;
+}
+
+.sidebar-footer {
+    gap: 8px;
+}
+
+/* Reference dashboard layout correction — preserve both logo assets */
+@media (min-width: 761px) {
+  .sidebar {
+    width: 185px;
+    flex: 0 0 185px;
+    padding: 10px 9px 10px;
+  }
+
+  .main-area {
+    margin-left: 185px;
+    width: calc(100% - 185px);
+  }
+
+  .brand {
+    gap: 8px;
+    padding: 3px 8px 17px;
+  }
+
+  .brand .brand-logo {
+    width: 28px;
+    height: 34px;
+    max-width: 28px;
+    flex: 0 0 28px;
+    object-fit: contain;
+  }
+
+  .sidebar-footer {
+    gap: 8px;
+    padding: 12px 6px 0;
+  }
+
+  .sidebar-footer .partner-logo {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    object-fit: contain;
+  }
+
+  .content {
+    padding: 14px 18px 18px;
+  }
+
+  .topbar {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+/* Keep the reference's five-card and two-column dashboard at desktop widths */
+@media (min-width: 761px) and (max-width: 1150px) {
+  .dashboard-grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, .88fr);
+    gap: 10px;
+  }
+
+  .kpi-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .kpi-card {
+    padding: 10px 8px;
+  }
+
+  .kpi-card > strong {
+    font-size: 22px;
+  }
+
+  .kpi-top {
+    font-size: 9px;
+  }
+
+  .kpi-icon {
+    width: 21px;
+    height: 21px;
+  }
+
+  .bar-row {
+    grid-template-columns: 65px minmax(25px, 1fr) 39px 76px;
+    gap: 5px;
+    font-size: 9px;
+  }
+
+  .bar-row > small {
+    font-size: 8px;
+  }
+
+  .panel-head {
+    padding: 12px 12px 10px;
+  }
+
+  .legend {
+    gap: 6px;
+    font-size: 8px;
+  }
+
+  .trend-chart {
+    padding-right: 9px;
+    padding-left: 24px;
+  }
+
+  th, td {
+    padding: 8px 7px;
+  }
+}
